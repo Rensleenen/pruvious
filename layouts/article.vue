@@ -3,11 +3,11 @@
   <div class="pageWrapper">
 
     <div class="article-img-box">
-      <img :src="page.fields.featuredImage != null ? page.fields.featuredImage.src : 'https://placehold.co/600x400'"
+      <img :src="page?.fields.featuredImage != null ? page.fields.featuredImage.src : 'https://placehold.co/600x400'"
         class="article-img">
     </div>
     <div class="article-head-wrapper">
-        <h1 class="article-head">{{ page.fields.articleTitle }}</h1>
+        <h1 class="article-head">{{ page?.fields.articleTitle }}</h1>
     </div>
     <slot />
 

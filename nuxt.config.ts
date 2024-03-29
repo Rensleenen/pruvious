@@ -5,11 +5,17 @@ export default defineNuxtConfig({
     "pruvious",
     "nuxt-primevue",
     "@pinia/nuxt",
-
   ],
   pruvious: {
     jwt: {
       secretKey: "a8zoNHcOFMlu1enyH21mswkzJ2X-ci05roYGWmwENy-oQ1OMi8v7grc9V47HP8Iy"
+    },
+    dashboard: {
+      baseComponents: {
+        misc: {
+          CollectionsContentRecord: './components/Dashboard/Misc/CollectionsContentRecord.vue',
+        }
+      }
     }
   },
   app: {
